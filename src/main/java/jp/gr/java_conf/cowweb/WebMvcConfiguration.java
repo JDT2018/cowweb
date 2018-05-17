@@ -11,7 +11,7 @@ class WebMvcConfiguration implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(getAccessLogInterceptor())
-                .excludePathPatterns("/cowsay/ping");
+                .excludePathPatterns("/cowsay/api/ping");
     }
 
     @Bean
